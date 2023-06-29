@@ -1,0 +1,105 @@
+body{
+    background: url(../pictures/background.jpg);
+    font-family: "Poppines", sans-serif;    
+    background-size: cover;
+}
+.mb-5{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.logo img{
+    width: 150px;
+    position: absolute;
+    top: 27.5%;
+    left: 75%;
+    transform: translate(20%, -105%);
+}
+.shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+.profile-tab-nav{
+    min-width: 250px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #D5B038;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #D5B038;
+    border-color: #D5B038;
+}
+.btn-primary:hover{
+    background-color: #b09438;
+    border-color: #b09438;
+}
+.management-module {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+@media only screen and (max-width: 576px) {
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    th, td{
+        min-width: 100px;
+    }
+    .logo img{
+        top: 27.5%;
+        left: 50%;
+        transform: translate(20%, -105%);
+    }
+}

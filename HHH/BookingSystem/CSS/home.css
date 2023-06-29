@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", "sans-serif";
+}
+#header{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../pictures/background.jpg);
+    background-size: cover;
+}
+.header-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 6.3vw;
+    font-weight: 800;
+    margin-top: 20%;
+    padding-left: 1.5vw;
+    line-height: 0.9; 
+}
+.first-line{
+    margin-top: 20.5vw;
+    margin-left: 10vw;
+    white-space: nowrap;
+    text-shadow: 2px 9px 4px rgba(0,0,0,0.9);
+}
+.first-line span{
+    color: #D5B038;
+    text-shadow: 2px 9px 4px rgba(0,0,0,0.9);
+}
+.second{
+    margin-left: 29%;
+    font-size: 1.5vw;
+    font-style:italic;
+    color: white;
+    font-weight: 800;
+}
+.logo{
+    width: 15%;
+    max-width: 500px;
+    position: absolute;
+    top: -2%;
+    left: 3%;
+}
+.header-nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    position: absolute;
+    top: 14vh;
+    left: 33%;
+    transform: translate(-45%, -50%);
+    list-style: none;
+    margin-left: 1.5vw;
+}
+.sign_in{
+    position: relative;
+    left: 89%;
+}
+.header-nav li{
+    display: inline-block;
+}
+.header-nav li a{
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 8px 18px 8px 18px;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.15s;
+}
+#userinfo{
+    position: relative;
+    top: 60%;
+    left: 75%;
+    transform: translate(155%, -2%);
+    cursor: pointer;
+}
+#userinfo a{
+    font-size: 30px;
+    color: white;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+.popup-content{
+    position: relative;
+    width: 400px;
+    height: 50vh;
+    max-width: 90%;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+.popup-content img{
+    width: 150px;
+}
+.popup-content h2, p{
+    position: relative;
+    top: -15%;
+}
+#editProfileButton, #closePopupButton{
+    padding: 3px 7px 3px 7px;
+}
+#editProfileButton {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#closePopupButton {
+    margin-top: 10px;
+}
+.header-nav li a:hover {
+    background-color: #D5B038;
+}
+.header-nav li a:active{
+    background-color: #5d5027;
+}
+#about{
+    padding: 10px 10%;
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.about_us{
+    font-size: 5vw;
+    position: absolute;
+    top: 107%;
+    left: 18.5%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    color: #D5B038;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+.description2{
+    position: absolute;
+    top: 129%;
+    left: 16%;
+    transform: translate(-26%, -50%);
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+.description2 span{
+    display: block;
+}
+.logo_about{
+    width: 44vw;
+    position: absolute;
+    top: 138%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+.description{
+    font-size: 1.4vw;
+    position: absolute;
+    top: 125%;
+    left: 62.2%;
+    transform: translate(-150%, 50%);
+    text-align: justify;
+    color: black;
+}
+
+.social-icons{
+    position: absolute;
+    top: 162%;
+    left: 71.7%;
+    transform: translate(-50%, -50%);
+}
+.social-icons h4{
+    padding-left: 1.25vw;
+}
+.social-icons a{
+    display: inline-block;
+    font-size: 2.5vw;
+    color: black;
+    padding-left: 15px;
+    transition: color 0.15s, transform 0.15s;
+}
+.social-icons .fa-facebook:hover{
+    color: blue;
+    transform: translateY(-5px);
+}
+.social-icons .fa-instagram:hover{
+    color: #FE4E18;
+    transform: translateY(-5px);
+}
+.social-icons .fa-envelope:hover{
+    color: brown;
+    transform: translateY(-5px);
+}
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 576px) {
+    .header-text{
+       position: absolute;
+       top: 25%;
+       left: 44%;
+       transform: translate(-50%, -90%);
+       line-height: 0.8;
+       font-size: 28px;
+    }
+    .second{
+        font-size: 8px;
+        margin-left: 22%;
+    }
+    .header-nav {
+        position: absolute;
+        top: 0%;
+        left: 83%;
+        transform: translate(-50%, -50%);
+        margin-left: -5px;
+    }
+    .header-nav li{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header-nav li:nth-child(1) {
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header-nav li:nth-child(2) {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header-nav li:nth-child(3) {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header-nav li:nth-child(4) {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header-nav li a{
+        padding: 5px 9px 5px 9px;
+        font-size: 10px;
+    }
+    .header-nav li a:hover {
+        background-color: #5d5027;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        color: white;
+        position: absolute;
+        top: 4%;
+        left: 7%;
+        cursor: pointer;
+    }
+    nav ul{
+        background: #D5B038;
+        position: fixed;
+        top: -100vh;
+        left: 50%;
+        transform: translate(-82.5%);
+        width: 105vw;
+        height: 20vh;
+        padding-top: 50px;
+        transition: top 0.5s;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 35px;
+        left: 85%;
+        cursor: pointer;
+    }
+    .first-line{
+        text-shadow: 3px 3px 5px rgba(0,0,0,0.9);
+    }
+    .first-line span{
+        text-shadow: 2px 5px 4px rgba(0,0,0,0.9);
+    }
+    .logo{
+        width: 40%;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .about_us{
+        font-size: 33px;
+        position: absolute;
+        top: 107%;
+        left: 25%;
+        transform: translate(-60%, -50%);
+        padding-left: 17vw;
+    }
+    .description2{
+        font-size: 7px;
+        position: absolute;
+        top: 105%;
+        left: 62.5%;
+        transform: translate(-150%, 50%);
+        text-align: justify;
+    }
+    .description{
+        font-size: 7px;
+        position: absolute;
+        top: 115%;
+        left: 62.5%;
+        transform: translate(-150%, 50%);
+    }
+    .logo_about{
+        width: 200px;
+        position: absolute;
+        top: 120%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+    }
+    .social-icons{
+        position: absolute;
+        top: 129%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+    }
+    .social-icons h4{
+        font-size: 10px;
+    }
+    .social-icons a{
+        font-size: 13px;
+        padding-left: 5px;
+        margin-left: 5px;
+    }
+}

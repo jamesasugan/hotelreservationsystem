@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../pictures/background.jpg);
+    background-size: cover;
+}
+.logo{
+    width: 230px;
+    margin-left: 3%;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 20px;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #D5B038;
+    position: relative;
+}
+.form-box h2{
+    font-size: 32px;
+    color: #d7bf6f;
+}
+.form-box h2 span{
+    color: #D5B038;
+}
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #D5B038;;
+}
+form a{
+    text-align: left;
+    font-size: 13px;
+    text-decoration: none;
+    color: #D5B038;
+}
+.button-field{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+.signup-btn button{
+    margin-top: 5px;
+}
+.button-field input[type="submit"]{
+    padding: 10px;
+}
+.button-field input[type="submit"], .signup-btn button{
+    width: 50%;
+    background: #D5B038;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.button-field input[type="submit"]:hover, .signup-btn button:hover{
+    background-color:#d7bf6f;
+}
+@media only screen and (max-width: 576px){
+    .logo{
+        width: 200px;
+        position: absolute;
+        top: 13%;
+        left: 46%;
+        transform: translate(-50%, -60%);
+    }
+}
+
+
